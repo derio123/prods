@@ -10,6 +10,11 @@ class AuthService {
     login(credentials) {
         return axios.post(`${API_BASE_URL}/login`, credentials);
     }
+
+    logout() {
+        return axios.post(`${API_BASE_URL}/logout`);
+    }
+
 }
 
 export default new AuthService();
